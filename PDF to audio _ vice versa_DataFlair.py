@@ -1,4 +1,4 @@
-#DataFlair - import library
+# import library
 import os
 import  tkinter as tk
 from tkinter import filedialog
@@ -45,19 +45,6 @@ class Application(tk.Frame):
 		self.TextTo_Speech['text'] = 'Text to Speech'
 		self.TextTo_Speech['command'] = self.TextToSpeech
 		self.TextTo_Speech.grid(row=1, column=1, pady=60, padx=60)
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	def Delete_Frame(self):
 		for widgets in self.winfo_children():
@@ -148,7 +135,7 @@ class Application(tk.Frame):
 
 root = tk.Tk()
 root.geometry('500x300')
-root.wm_title('Speech to Text and Text to Speech converter by DataFlair')
+root.wm_title('Speech to Text and Text to Speech converter')
 
 app = Application(master=root)
 app['bg'] = '#e3f4f1'
